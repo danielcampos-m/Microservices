@@ -22,4 +22,9 @@ public class CurrencyConversionController {
 		return new CurrencyConversion(currencyConversion.getId(), from, to, quantity,currencyConversion.getConversionMultiple(), quantity.multiply(currencyConversion.getConversionMultiple()),currencyConversion.getEnvironment());
 	}
 	
+	@GetMapping("/up")
+	public String up() {
+		return "up";
+	}
+	
 }

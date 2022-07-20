@@ -32,4 +32,9 @@ public class CurrencyExchangeController {
 		
 		return currencyExchange;
 	}
+	
+	@GetMapping("/up")
+	public String up() {
+		return "up";
+	}
 }
